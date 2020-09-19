@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If Else Control Stmts.</title>
+</head>
+<body>
+    <script>
+        document.write("<h1>If Else Control Statements: </h1>");
+        var x = 7; // x = 6 is a Hardcoded Value not inputed by the user.
+        if(x%2==0){
+            document.write("<h1>"+ x + " is Even " + "</h1>");
+        }
+        else{
+            document.write("<h1>"+ x + " is Odd " + "</h1>");
+        }
+        
+        var y = 152;
+        if(y > 0){
+            document.write("<h1>"+ y + " is Positive. " + "</h1>");
+        }
+        else if(y<0){
+            document.write("<h1>"+ y + " is Negative. " + "</h1>");
+        }
+        else if(y==0){
+            document.write("<h1>Entered No. is Zero.</h1>");
+        }
+
+        var z = 154;
+        if(z > 0 && z%2 == 0){
+            document.write("<h1>"+ z + " is Even and Positive No." + "</h1>");
+        }
+        else if(z < 0 && z%2 == 0){
+            document.write("<h1>"+ z + " is Even but Negative." + "</h1>");
+        }
+    </script>
+</body>
+</html>

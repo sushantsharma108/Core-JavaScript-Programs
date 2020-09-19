@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oprators in JavaScript</title>
+</head>
+
+<body>
+    <script>
+        var a = 8;
+        var b = 5;
+        var sum = a + b;
+        var result = "Sushant" + a + b; 
+        // The + operator has a Left To Right associativity means if anything comes after a string and the compiler will have to add that then it will consider the next terms also as the strings and that will lead to the unexpected results.
+        document.write("<h1>Sum of a and b is : " + sum + "</h1>");
+        document.write("<h1>" + result + "</h1>");
+        //Now in this case the compiler will treat the values of a and b as the strings & add them to the string "Sushant".
+        // But if you add the values before the string in then the compiler will treat them as the numbers and add the sum of those numbers in the string further.
+        var result2 = a + b + "Sushant" + a + b;  
+        document.write("<h1>"+ result2 + "</h1>");
+        var result3 = a - b;
+        var result4 = a * b; 
+        var result5 = a / b;
+        var result6 = a % b;
+        var result7 = a ** b;
+        document.write("<h1>Subtraction of a and b is : " + result3 + "</h1>");
+        document.write("<h1>Multiplication of a and b is : " + result4 + "</h1>");
+        document.write("<h1>Division of a and b is : " + result5 + "</h1>");
+        document.write("<h1>Modulo Division of a and b is : " + result6 + "</h1>");
+        document.write("<h1>Exponential Power of a and b is : " + result7 + "</h1>");
+    </script>
+</body>
+
+</html>
